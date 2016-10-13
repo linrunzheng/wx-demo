@@ -1,0 +1,12 @@
+.container{
+padding: 50rpx 40rpx;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.imgs{
+	width: 80%;
+}
+text{
+	text-align: left;
+}

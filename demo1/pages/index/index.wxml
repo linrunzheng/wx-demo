@@ -1,0 +1,23 @@
+<import src="../temple/temple.wxml"/>
+<view class="head-title">
+    <text>豆瓣电影top250</text>
+</view>
+<scroll-view class="main" scroll-y="true" bindscrolltoupper="" bindscrolltolower="" bindscroll="" scroll-into-view="" scroll-top="">
+	<block wx:for="{{moivelist}}">
+		<view class="moive-item">
+		<image class="moive-img" style="" mode="" src="{{item.imgsrc}}" binderror="" bindload=""></image>
+		<view class="moive-content">
+			<view class="content-titile">
+				<text >{{item.title}}</text>
+			</view>
+			<view class="content-introduce"> 
+				<text >{{item.introduce}}</text>
+			</view>
+			<view class="content-author">
+				<text >{{item.author}}</text>	
+			</view>	
+		</view>	
+		<text class="content-rank">{{item.rank}}</text>	
+	</view>	
+	</block>
+</scroll-view>	

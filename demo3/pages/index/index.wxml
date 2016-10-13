@@ -1,0 +1,30 @@
+<import src="../temple/temple.wxml"></import>
+<loading hidden="{{loading}}">
+	加载中....
+</loading>
+<view class="head-title" bindtap="bindViewTap">
+    <text>新上映</text>
+</view>
+<scroll-view class="main" scroll-y="true" bindscrolltoupper="" bindscrolltolower="" bindscroll="" scroll-into-view="" scroll-top="">
+	<block wx:for="{{moivelist}}">
+		<template is="try" data="{{item}}"></template>
+		<!-- 导航不需要加wxml，可带参数，将参数放在？后面-->
+		<!-- <navigator url="../detail/detail?imgsrc={{item.imgsrc}}&title={{item.title}}&author={{item.author}}&introduce={{item.introduce}}&rank={{item.rank}}" >
+			<view class="moive-item">
+		<image class="moive-img" style="" mode="" src="{{item.imgsrc}}" binderror="" bindload=""></image>
+		<view class="moive-content">
+			<view class="content-titile">
+				<text >{{item.title}}</text>
+			</view>
+			<view class="content-introduce"> 
+				<text >{{item.introduce}}</text>
+			</view>
+			<view class="content-author">
+				<text >{{item.author}}</text>	
+			</view>	
+		</view>	
+		<text class="content-rank">{{item.rank}}</text>	
+	</view>	
+		</navigator> -->
+	</block>
+</scroll-view>	

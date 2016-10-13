@@ -1,0 +1,21 @@
+ 
+	
+<template name="try" >
+	<navigator url="../detail/detail?id={{item.id}}">
+			<view class="moive-item">
+		<image class="moive-img" style="" mode="" src="{{item.images.small}}" binderror="" bindload=""></image>
+		<view class="moive-content">
+			<view class="content-titile">
+				<text >{{item.title}}</text>
+			</view>
+			<view class="content-introduce"> 
+				<text >{{item.original_title}}</text>
+			</view>
+			<view class="content-author">
+				<text >{{item.directors[0].name}}</text>	
+			</view>	
+		</view>	
+		<text class="content-rank">{{item.rating.average}}</text>	
+	</view>	
+		</navigator>
+</template>
