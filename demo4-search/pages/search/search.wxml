@@ -1,0 +1,16 @@
+<import src="../temple/temple.wxml"></import>
+<loading hidden="{{loading}}">
+	加载中....
+</loading>
+<view class="searchWrap">
+	<view class="inputWrap">
+		<icon type="search" size="20"/>	
+        <input placeholder="请输入搜索内容"  value="{{content}}" type="text"  placeholder-style="custom-placeholder-style" placeholder-class="custom-placeholder-class"   bindinput="inputing"  bindblur="quick"/>
+	</view>	 
+    <view class="cancel" bindtap="searching">{{cancel}}</view>
+</view>
+<scroll-view class="main" scroll-y="true" bindscrolltoupper="" bindscrolltolower="" bindscroll="" scroll-into-view="" scroll-top="">
+	<block wx:for="{{moivelist}}">
+		<template is="try" data="{{item}}"></template>
+	</block>
+</scroll-view>	

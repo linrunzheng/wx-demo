@@ -1,0 +1,44 @@
+.main{
+	font-family: Microsoft YaHei;
+	flex-direction: column;
+	display: flex;
+	box-sizing: border-box;
+}
+.moive-item{
+	display: flex;
+	padding:20rpx 40rpx;
+	border-bottom: 1rpx solid #eee;
+
+}
+.moive-img{
+	width: 128rpx;
+	height: 128rpx;
+	margin-right: 40rpx;
+}
+.moive-content{
+	flex: 1;
+	flex-direction: column;
+	position: relative;
+}
+.content-titile{
+	padding-bottom: 15rpx;
+	font-size: 32rpx;
+}
+.content-introduce{
+	padding-bottom: 15rpx;
+	font-size: 22rpx;
+  	color: #c0c0c0;
+  	overflow:hidden;
+}
+.content-author{
+font-size: 26rpx;
+  color: #999;
+}
+
+
+.content-rank{
+	color:#f74c31;
+	font-weight: bold;
+	font-size: 32rpx;
+	display: block;
+}

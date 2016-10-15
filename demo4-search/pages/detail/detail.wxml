@@ -1,0 +1,15 @@
+<loading hidden="{{loading}}">
+  加载中...
+</loading>
+<view class="container">
+		<image class="imgs" style="" mode="" src="{{item.images.large}}" binderror="" bindload=""></image>
+		<text> {{item.title}} </text>		
+		<text> {{"评分"+item.original_title}} </text>		
+		<text> {{"导演"+item.directors[0].name}} </text>		
+		<text> {{"主演"+item.rating.average}} </text>		
+</view>
+<view>
+	{{item.summary}}
+</view>
+
+

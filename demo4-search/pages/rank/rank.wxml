@@ -1,0 +1,14 @@
+<!-- <import src="../temple/temple.wxml"></import> -->
+<loading hidden="{{loading}}">
+	加载中...
+</loading>
+<view class="head-title" bindtap="bindViewTap">
+    <text>北美电影top10</text>
+</view>
+<scroll-view class="main" scroll-y="true" bindscrolltoupper="" bindscrolltolower="" bindscroll="" scroll-into-view="" scroll-top="">
+	<import src="../temple/temple.wxml"></import>
+	<block wx:for="{{moivelist}}">
+		<template is="try" data="{{item}}"></template>
+	</block>
+	
+</scroll-view>	

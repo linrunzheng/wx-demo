@@ -1,0 +1,33 @@
+input{
+	border: 1px solid #000;
+	flex: 1;
+	padding: 10rpx 0 10rpx 74rpx;
+	color: #827b80;
+	font-size: 28rpx;
+}
+.searchWrap{
+	display: flex;
+	padding:20rpx 0;
+	position: relative;
+	flex-direction: row;
+	border-bottom:1px solid #eee;
+}
+.inputWrap{
+	padding-left: 30rpx;
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius:20rpx;
+}
+.cancel{
+	
+	border: 1px solid #919090;
+	margin-left: 30rpx;
+	padding:20rpx;
+	border-radius:10rpx;
+}
+icon{
+	position: absolute;
+	left: 45rpx;
+}
